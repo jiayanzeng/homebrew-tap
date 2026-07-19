@@ -1,25 +1,25 @@
 class Vibescan < Formula
   desc "Command-line interface for vibescan"
   homepage "https://github.com/jiayanzeng/vibescan"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.2/vibescan-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "2b9a5e637806a0f7d0cd8e400292861e8da99eea5ff2597a297f87dbfdada483"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "5ecf74f97e378f57d6c67dd50dfef62647f3b7ffc222d9a4f97d7810df67fc95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.2/vibescan-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "020d7fd0c1e52ae9681fe3b93936ea5413e7c87bb8a4efbead6caf10dae7df4a"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "1a010bfb0a5643d88daf8d3ecb0c8fb2dffcc3082687df34a81aad361b42cfd8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.2/vibescan-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "b04d26d17abe30a238dc9cff8173f6756a692ec651f4ee159066777f1143a0c3"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "7bd770ff5b2a8d159c96d65d32d311e66b227c88633d9cabe55dff78b788d008"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.2/vibescan-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "d72647b7752ca5d6d39178da202f82ec23668e010bc631c0d67091d243312ffa"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "d4a48575c83b572b624a4ac67b2e70f8ba58c4ff3ad41099a6a5a9c4c25af5d3"
     end
   end
   license "MIT"
