@@ -1,28 +1,28 @@
 class Vibescan < Formula
   desc "Command-line interface for vibescan"
   homepage "https://github.com/jiayanzeng/vibescan"
-  version "0.1.3"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "5ecf74f97e378f57d6c67dd50dfef62647f3b7ffc222d9a4f97d7810df67fc95"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.2.0/vibescan-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "b6ad4aa530e3a0602bbfa2c3b1199208c84c37e2157bc31199c0fef3ebe367b9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "1a010bfb0a5643d88daf8d3ecb0c8fb2dffcc3082687df34a81aad361b42cfd8"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.2.0/vibescan-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "5aa48d0e542938bfc6603f02003ec7076568f8ffd22a05cf59f093bad70182bc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "7bd770ff5b2a8d159c96d65d32d311e66b227c88633d9cabe55dff78b788d008"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.2.0/vibescan-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "291f14485b82f120977ba0fa11144fd2bab4f208525074c8eaa41291260dfca8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.1.3/vibescan-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "d4a48575c83b572b624a4ac67b2e70f8ba58c4ff3ad41099a6a5a9c4c25af5d3"
+      url "https://github.com/jiayanzeng/vibescan/releases/download/v0.2.0/vibescan-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "df67a8bb2271c92851b8ad929211bd0c50c41d0305c9ae1d5fa09c2774a4588e"
     end
   end
-  license "MIT"
+  license "PolyForm-Noncommercial-1.0.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":               {},
